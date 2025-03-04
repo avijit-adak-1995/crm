@@ -67,7 +67,8 @@ const Dashboard = () => {
       <NavTool
                 title=''
                 date={true}
-                buttons={naveToolData?.button}
+                // buttons={naveToolData?.button}
+                buttons={naveToolData?.dropDownSelector}
                 dropdownSelector={naveToolData?.dropDownSelector}
               />
         <div className="row">

@@ -21,9 +21,12 @@ const ProgressBar = ({height ,marginTop,backgroundColor,progressColor,progressDa
                         width: progressData,
                         backgroundColor: progressColor,
                       }}
-                      aria-valuenow="90"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
+                      // aria-valuenow="90"
+                      // aria-valuemin="0"
+                      // aria-valuemax="100"
+                      aria-valuenow={90}
+  aria-valuemin={0}
+  aria-valuemax={100}
                     ></div>
                   </div>
   )

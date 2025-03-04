@@ -65,7 +65,7 @@ const Manage = () => {
     <div className="container">
       <NavTool title="Manage" date={true}  buttons={naveToolData?.button} dropdownSelector={naveToolData?.dropDownSelector}/>
       <div className={Styles.boxContainer}>
-        {data?.map((item, i) => (
+        {data?.map((item:any, i) => (
           <span key={i}>
             <span style={{width:'320px'}}>{item?.content}</span>
             <span style={{flexWrap:'nowrap'}}>
@@ -74,7 +74,7 @@ const Manage = () => {
                 height={"8px"}
                 backgroundColor={"#F8F9FA"}
                 progressData={`${item?.percentage}%`}
-                progressColor={(item?.percentage<=20)?'#AF0000':(item?.percentage<=60)?'#FFAB2D':'#48BB78'}
+                progressColor={(item?.percentage<20 || item?.percentage==20)?'#AF0000':(item?.percentage<60 || item?.percentage==60)?'#FFAB2D':'#48BB78'}
                 width={"200px"}
               />
             </span>
