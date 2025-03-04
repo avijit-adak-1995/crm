@@ -1,0 +1,87 @@
+.container {
+    font-family: Helvetica;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 75%;
+    margin: 1.3rem 2.3rem;
+    padding: 1.5rem 1rem 0.3rem 1.5rem;
+    box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px #00000005;
+}
+.container div{
+    display: flex;
+    align-items: center;
+    column-gap: 4px
+}
+
+.container strong {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    color: #2D3748;
+}
+.checktypo {
+    font-size: 14px;
+    font-weight: 700;
+    color:#A0AEC0;
+    margin: 0.2rem 0rem;
+}
+
+.customTable {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .customTable div{
+    color:#5D5FEF
+  }
+  
+  .customTable th,
+  .customTable td {
+    border: none;
+    border-bottom: 1px solid #E2E8F0;
+    padding: 1rem 0px;
+    text-align: left;
+    margin: 0rem ,10rem;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .customTable tr:last-child td {
+    border: none;
+    border-bottom: 0px solid #ddd;
+  }
+  .customTable td {
+    color: #2D3748;
+  }
+  .customTable th {
+    padding-top: 1.6rem;
+    padding-bottom: 0.5rem;
+    color: #A0AEC0;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .customTable td:first-child {
+    width: 40%;
+  }
+  
+  .customTable td:nth-child(3) {
+    width: 20%;
+  }
+  .customTable img{
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border:2px solid #fff;
+        margin-left: -10px;
+  }
+  .cardContainer{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    column-gap:33px;
+    row-gap: 5px;
+    /* margin: 2rem 0rem; */
+    width:96%;
+    margin: 0.1rem auto;
+}

@@ -1,0 +1,37 @@
+.container {
+    padding: 12px 12px;
+    background-color: #f8f8f8;
+}
+
+.headerText {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    padding-top: 54px;
+    padding-left: 37px;
+}
+
+
+
+
+.container td {
+    padding: 6px 0;
+}
+
+.textStyle {
+    color: var(--Base-On-Background, #FFF);
+    font-family: Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.AddWrapper {
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 15px;
+    background: var(--Base-On-Background, #FFF);
+}

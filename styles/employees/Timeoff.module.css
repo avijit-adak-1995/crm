@@ -1,0 +1,17 @@
+.container {
+    padding: 12px 12px;
+    background-color: #f8f8f8;
+}
+
+.headerText {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    padding-top: 54px;
+    padding-left: 37px;
+}
+
+
+.floatingSquare h6:hover {
+    background-color: #eae4e4;
+}

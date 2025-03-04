@@ -1,0 +1,22 @@
+.container {
+    padding: 12px 12px;
+    background-color: #f8f8f8;
+}
+
+.headerText {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    padding-top: 54px;
+    padding-left: 37px;
+}
+
+.container th,
+.container td {
+    padding: 6px 0px;
+    
+}
+
+.container th {
+    font-size: 10px;
+}

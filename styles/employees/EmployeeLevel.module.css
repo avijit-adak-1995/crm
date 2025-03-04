@@ -1,0 +1,26 @@
+.container {
+    padding: 12px 12px;
+    background-color: #f8f8f8;
+}
+
+.headerText {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    padding-top: 54px;
+    padding-left: 37px;
+}
+
+
+
+
+.tableHeader {
+    color: var(--Gray-Gray-700, #2D3748);
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 8px 38px;
+
+}

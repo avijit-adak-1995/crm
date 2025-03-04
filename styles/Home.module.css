@@ -1,0 +1,124 @@
+.authContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* .authLeft { */
+  /* border: 2px solid red; */
+  /* position: absolute; */
+  /* content: ''; */
+  /* top: 0; */
+  /* right: 10%; */
+  /* background-image: url('../public/assets/auth.png'); */
+  /* width: 48%; */
+  /* height: 41vh; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+/* } */
+
+.authLeft {
+  margin: 0;
+  margin-top: 0;
+  position: relative;
+  left:-60px;
+}
+.gradientBox{
+  top: 5%;
+  left: 0;
+  position: fixed;
+  height: 400px;
+  width: 300px;
+  background: radial-gradient(ellipse at center, #00D7FF30, transparent 70%);
+  filter: blur(20px); 
+  z-index: -1;
+
+}
+.gradientBoxPurple{
+  top: 30%;
+  left: 5%;
+  position: fixed;
+  height: 450px;
+  width: 450px;
+  filter: blur(20px); 
+  z-index: -1;
+  background: radial-gradient(ellipse at center, #5800FF50, transparent 70%);
+}
+.authLeft h3 {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 50px;
+  white-space: pre-line;
+}
+
+.authLeft p {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  white-space: pre-line;
+
+}
+.authLeft strong {
+  color: #4461F2;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 2px;
+  cursor: pointer;
+}
+.authMedium{
+  position: relative;
+  z-index: -1;
+  top:30px;
+  left: -80px;
+  width: 400px;
+}
+.authRight {
+  width: 452px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width:1200px) {
+
+  .authMedium {
+    display: none;
+  }
+
+  .authRight {
+    width: 70%;
+
+  }
+}
+@media screen and (max-width:992px) {
+  .authLeft {
+    display: none;
+  }
+  .authMedium {
+    display: none;
+  }
+
+  .authRight {
+    width: 70%;
+
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .authRight {
+    width: 100%;
+    
+  }
+}

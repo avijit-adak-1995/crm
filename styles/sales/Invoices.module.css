@@ -1,0 +1,43 @@
+.container {
+    padding: 12px 12px;
+    background-color: #f8f8f8;
+}
+
+.headerText {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    padding-top: 54px;
+    padding-left: 37px;
+}
+
+.container th,
+.container td {
+    padding: 6px 0px;
+}
+
+.browse {
+    display: flex;
+    column-gap: 0.5rem;
+    border-radius: 10px;
+    background-color: #fff;
+    align-items: center;
+    padding: 0.3rem 0.8rem;
+    box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px #00000005;
+}
+
+.browse img {
+    margin-left: -4px;
+    margin-top: 3px;
+    width: 45px;
+    height: 45px;
+}
+
+.browse span {
+    color: #A0AEC0;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+}

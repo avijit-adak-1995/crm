@@ -1,0 +1,43 @@
+.relative{
+    position: relative;
+    /* margin-left: -425px; */
+}
+.container{
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -212px;
+
+    font-family: Helvetica;
+    padding:0.7rem 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #f7f7f7;
+    width: 230px;
+    box-shadow: 0px 8.500000238418579px 10.500000476837158px 0px #00000018;
+}
+
+.container div{
+    display: flex;
+    font-weight: 400;
+    gap:8px;
+    font-size: 17px;
+    align-items: center;
+}
+.container h4{
+    font-size: 18px;
+    font-weight: 700;
+    color:#2D3748;
+
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap:5px;
+    /* background: #000; */
+}
+.container img{
+    width: 26px;
+    height: 26px;
+}

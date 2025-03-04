@@ -1,0 +1,89 @@
+
+.container {
+    padding: 12px 12px;
+    background-color: #f8f8f8;
+}
+
+.headerText {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    padding-top: 54px;
+    padding-left: 37px;
+}
+
+
+.level {
+    padding: 8px 16px;
+    width: 44%;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 16px;
+    margin: 12px 28px;
+}
+
+.level h5 {
+    font-weight: bold;
+}
+.level input::placeholder {
+    color: #989898;
+    font-family: Helvetica;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.level input {
+    padding: 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #F3F3F3;
+    height:32px;
+}
+.level h4 {
+    font-weight: bold;
+    padding: 8px;
+}
+
+.level p {
+    color: #989898;
+    font-family: Helvetica;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 140%;
+}
+
+.level div {
+    width:50%;
+    border-bottom: 0.5px solid grey;
+    margin-left:  12px;
+    padding: 6px 0px;
+}
+
+.tableHeader {
+    color: var(--Gray-Gray-700, #2D3748);
+    font-family: Helvetica;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 8px 38px;
+
+}
+.tableContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top:2rem;
+}
+.tableItem{
+    width:calc(100%/4);
+    background-color: #fff;
+    margin-right:1rem;
+    padding:1rem 0.5rem;
+    border-radius:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

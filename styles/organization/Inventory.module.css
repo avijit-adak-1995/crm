@@ -1,0 +1,227 @@
+.container {
+    padding: 4px 32px;
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+.headerText {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    padding-top: 52px;
+    padding-left: 16px;
+}
+
+.sectioncontainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.sectionwrapper {
+    display: flex;
+    justify-content: center;
+    height: 44px;
+}
+
+.section {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    height: 36px;
+    gap: 12px;
+}
+
+.addButton {
+    background-color: #F56D58;
+    border: none;
+    border-radius: 12px;
+    height: 24px;
+    color: white;
+    margin: 5px 10px;
+}
+
+
+.dropdown {
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 16px;
+    padding: 2px;
+    margin: 3px 4px;
+    background-color: #f2eded;
+    height: 28px;
+    margin: 3px 4px;
+}
+
+.datePicker {
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 10px;
+    background-color: #f2eded;
+    height: 28px;
+    margin: 3px 4px;
+}
+
+.timeandactivity {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    height: 32px;
+    width: 400px
+}
+
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.signInButton,
+.settingsButton,
+.notificationButton {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.browse {
+    display: flex;
+    height: 56px;
+    padding-left: 16px;
+    gap: 24px;
+}
+
+.browseButton,
+.searchButton {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.browseButtonWrapper {
+    height: 36px;
+}
+
+.browseButtonIcon {
+    border: none;
+    background-color: #4caf50;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 10px;
+}
+
+.browseButtonText {
+    width: 100px;
+    color: blue;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.browseSearchText {
+    width: 100px;
+    color: grey;
+    padding: 8px;
+    font-weight: bold;
+}
+
+
+.tableWrapper {
+    padding: 24px 20px;
+    border: 1px solid white;
+}
+
+.tableContainer {
+    width: 100%;
+    overflow: auto;
+    max-height: 470px;
+    background-color: white;
+    height: 470px;
+    scrollbar-width: thin;
+    scrollbar-color: #ddd #fff;
+}
+.tableContainer::-webkit-scrollbar {
+    width: 12px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 6px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+    background-color: #fff;
+    /* Color of the scrollbar track */
+}
+.tableHeading {
+    padding: 16px 28px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.table {
+    width: calc(100% - 10px);
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 4px;
+}
+
+.table th {
+    padding: 2px 28px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: small;
+    font-weight: bold;
+    color: grey;
+}
+
+.table td {
+    padding: 8px 28px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: small;
+    font-weight: bold;
+}
+
+.tableImage {
+    height: 39px;
+    border: 1px solid grey;
+}
+
+.statusButton {
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid black;
+    max-width: "50px";
+}
+
+.active {
+    background-color: #227DD8;
+    /* Green */
+}
+
+.inactive {
+    background-color: #f44336;
+    /* Red */
+}

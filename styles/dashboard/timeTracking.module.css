@@ -1,0 +1,218 @@
+.container{
+    font-family: Helvetica;
+    color:#2D3748;
+    /* background-color: #fff;
+    border-radius: 15px;
+    width: 75%;
+    margin: 1.3rem 2.3rem;
+    padding: 1.5rem 1rem 0.3rem 1.5rem;
+    box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px #00000005; */
+}
+.container button{
+    /* border: none; */
+    /* height: 30px; */
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #5D5FEF;
+    color: #5D5FEF;
+    padding: 3px 15px;
+    font-size: 15px;
+
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    column-gap:33px;
+    row-gap: 1rem;
+    /* margin: 2rem 0rem; */
+    width:96%;
+    margin: 0.1rem auto;
+}
+
+.graphContainer{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Helvetica;
+    width: 80%;
+    margin: 1rem 1.5rem;
+    gap:20px;
+    
+}
+
+.graphBox{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    font-family: Helvetica;
+    /* width: 410px; */
+    max-width: fit-content;
+    margin: 1rem 0.2rem;
+    gap:20px;
+    /* height: 250px; */
+    /* flex: 1; */
+    color:#fff;
+    background-image: linear-gradient(to right, #313860 , #151928);
+    border-radius: 10px;
+    padding: 0.8rem 0.8rem 0rem 0.2rem;
+    box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px #00000005;
+}
+.graphBox span{
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 1rem;
+  }
+
+.dataContainer{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Helvetica;
+    width: 68%;
+    margin: 1rem 1.5rem;
+    gap:20px;
+    /* height: 250px; */
+}
+.title{
+    display:flex;
+    font-size: 17px;
+    font-weight: 700;
+    /* flex: 1; */
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #2D3748;
+}
+.content{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 5px;
+    padding: 0.3rem 0rem;
+    border-bottom :1px solid#E2E8F0;
+}
+.container p{
+    font-size: 16px;
+    color: #2D3748;
+}
+
+
+.subContainer{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    flex: 1;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1.2rem;
+    box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px #00000005;
+}
+.subContainer img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+
+.recentBox{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    font-family: Helvetica;
+    max-width: fit-content;
+    margin: 3rem 1.5rem;
+    padding: 1.2rem;
+    column-gap:10px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px #00000005;
+}
+
+.recentBox div{
+    /* display: flex; */
+    font-size: 17px;
+    font-weight: 700;
+}
+.recentTitle {
+    display: flex;
+    column-gap:5px;
+    align-items: center;
+}
+.recentTitle img{
+    border-radius: 50%;
+    margin-bottom: 5px;
+    height: 25px;
+    width: 25px;
+}
+.recentTitle strong{
+    font-size: 13px;
+    font-weight: 700;
+    height: 0px;
+    padding: 0;
+    margin:0;
+}
+
+.recentTitle div{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.recentSubBox{
+    background-color: #F8F9FA;
+    border-radius: 12px;
+    padding: 1.3rem;
+    max-width: fit-content;
+}
+
+.bottomTitle {
+    font-family: Helvetica;
+    width: 300px;
+    padding: 0.5rem 1.3rem;
+
+    }
+
+.bottomTitle button{
+    background-color: #237DD8;
+    color: #fff;
+    text-align: center;
+    padding: 3px 15px;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 29%;
+    margin-top: 15px;
+    justify-content: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+.bottomTitle strong {
+    font-family: 'Manrope',sans-serif;
+    font-size: 400;
+    font-size: 14px;
+}
+
+.bottomTitle div {
+    font-family: 'Manrope', sans-serif;
+    font-size: 400;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A0AEC0;
+}
+
+.renderPieChartUl{
+    padding: 0; 
+    margin: 0;
+  }
+  
+  .renderPieChartLI{
+    color: #fff !important;
+    display: flex !important;
+   align-items: center !important;
+   margin-bottom: 8px !important;
+  }
+
+  .renderPieChartPoint{
+    border-radius: 50% !important;
+    margin-right: 8px !important;
+    display:inline-block !important;
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  .chngFont{
+    font-size: 12px !important;
+  }

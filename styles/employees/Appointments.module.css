@@ -1,0 +1,86 @@
+
+.container {
+    padding: 4px 32px;
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+.headerText {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    padding-top: 56px;
+    padding-left: 14px;
+}
+
+
+
+.tableContainer {
+    width:86%;
+    height: 500px;
+    background-color: white;
+    margin-left: 16px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.tableHeader {
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    padding-top: 16px;
+    font-weight: bold;
+}
+
+.table {
+    width: calc(100% - 10px);
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+.table td,
+.table th {
+    padding: 4px 54px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: small;
+    font-weight: bold;
+    background-color: #F8F9FA;
+    height: 28px;
+    width: 100;
+    border-radius: 15px;
+}
+.highlight {
+    background-color: aqua;
+}
+
+
+.tableContainerMonth {
+    width: 86%;
+    height: 500px;
+    background-color: white;
+    margin-left: 16px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+
+
+.tableMonth {
+    width: calc(100% - 10px);
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+.tableMonth td,
+.tableMonth th {
+    padding: 4px 54px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: small;
+    font-weight: bold;
+    background-color: #F8F9FA;
+    height: 94px;
+    width: 100;
+    border-radius: 15px;
+}

@@ -1,0 +1,89 @@
+.popup{
+    font-family: Helvetica;
+    max-width: fit-content;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 0 0 0 0.4rem;
+}
+.popup input{
+    border-radius: 9px;
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 5px 10px;
+    background-color:#F8F9FA;
+    color: #2D3748;
+}
+.popup input:focus{
+    border: none;
+    outline: none;
+}
+.popup input::placeholder{
+    color:#989898;;
+    font-size: 12px;
+    font-weight: 400;
+}
+.popup textarea{
+    margin-top:1px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    width: 390px;
+    height: 95px;
+    border: none;
+    padding: 5px 10px;
+    background-color:#f3f3f3;
+    color: #2D3748;
+    resize: none;
+}
+.popup textarea:focus{
+    border: none;
+    outline: none;
+}
+.popup textarea::placeholder{
+    color:#989898;;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.popup > div{
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Helvetica;
+    color:#989898;
+}
+.popup h5{
+    font-size: 15px;
+    font-weight: 700;
+    color:#0096FF;
+    margin-bottom: 5px;
+}
+.popup span{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Helvetica;
+    color:#989898;
+}
+.popupButton{
+    display: flex;
+    gap: 0.5rem;
+    /* margin-left: 1px; */
+}
+
+.popupButton button{
+    margin-top:0.2rem;
+    border-radius: 20px;
+    border:2px solid #fff;
+    padding: 0.4rem;
+    width: 95px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    background-color:#5D5FEF;
+    border: 1px solid #5D5FEF;
+}

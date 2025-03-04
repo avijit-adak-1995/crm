@@ -1,0 +1,132 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Helvetica;
+    width: 100%;
+    margin: 0rem 1.5rem;
+    gap:20px;
+}
+.firstBox{
+    width: 543px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0.8rem;
+    box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px #00000005;
+}
+.graph{
+    display: flex;
+    /* width: 100%; */
+    /* height: 200px; */
+    /* max-width: fit-content; */
+    background-image: linear-gradient(to right, #313860 , #151928);
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.firstBox div{
+    font-size: 18px;
+    font-weight: 700;
+    color:#2D3748;
+}
+.firstBox p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #A0AEC0;
+}
+.firstBox strong{
+    display: flex;
+    column-gap: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #48BB78;
+}
+
+.graphBottom{
+    display: flex;
+    /* flex-wrap: wrap; */
+    column-gap: 2rem;
+    row-gap: 1rem;
+    margin-top: 0.2rem;
+}
+.graphBottom img{
+    width: 34px;
+    height: 34px;
+}
+.graphBottom span{
+    font-family: Helvetica;
+    font-size: 13px;
+    font-weight: 700;
+    color:#A0AEC0;
+    margin-left: -5px;
+}
+.graphBottom div{
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 700;
+    color:#2D3748;
+    margin-bottom: 0.5rem;
+}
+
+.secondBox{
+    width: 50%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1rem 0.8rem;
+    box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px #00000005;
+}
+.secondBox div{
+    font-size: 18px;
+    font-weight: 700;
+    color:#2D3748;
+}
+.secondBox p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #A0AEC0;
+}
+.secondBox strong{
+    display: flex;
+    column-gap: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #48BB78;
+}
+
+.thirdBox{
+    /* display: flex; */
+    font-family: Helvetica;
+    margin:1.3rem 2.2rem;
+    width: 380px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1rem 1.4rem;
+    box-shadow: 0px 3.500000238418579px 5.500000476837158px 0px #00000005;
+}
+.thirdBox div{
+    margin-bottom: 0.5rem;
+    font-size: 19px;
+    font-weight: 700;
+    color:#2D3748;
+}
+.thirdBox strong{
+    font-size: 15px;
+    font-weight: 700;
+    color:#2D3748;
+}
+.thirdBox p{
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 18.4px;
+    font-weight: 400;
+    color:#2D3748;
+    font-style: italic;
+}
+.thirdBox button{
+    font-size: 14px;
+    font-weight: 400;
+    color:#fff;
+    background-color: #F56D58;
+    border-radius: 20px;
+    border: none;
+    padding: 0.2rem 0.8rem;
+}

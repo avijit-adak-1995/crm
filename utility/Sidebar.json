@@ -1,0 +1,299 @@
+{
+    "Sidebar": [
+        {
+            "name": "Dashboard",
+            "licon": "/assets/Sidebar/dashboard.svg",
+            "list": [
+              
+            ]
+        },
+        {
+            "name": "Accounting",
+            "licon": "/assets/Sidebar/acount.svg",
+            "list": [
+                
+                {
+                    "name":"Estimated Received",
+                    "path":"/accounting/estimatedReceived"
+                },
+                {
+                    "name": "Invoices",
+                    "path": "/accounting/Invoices"
+                },
+                {
+                    "name": "Income",
+                    "path": "/accounting/Income"
+                },
+                {
+                    "name": "Expenses",
+                    "path": "/accounting/Expenses"
+                },
+                {
+                    "name": "Recurring Expenses",
+                    "path": "/accounting/Recurringexpenses"
+                },
+                {
+                    "name":"Payments",
+                    "path":"/accounting/Payments"
+                }
+
+            ]
+        },
+        {
+            "name": "Sales",
+            "licon": "/assets/Sidebar/Vector.svg",
+            "list": [
+                {
+                    "name": "Proposals",
+                    "path": "/sales/Proposals"
+                },
+                {
+                    "name": "Estimates",
+                    "path": "/sales/Estimates"
+                },
+                {
+                    "name": "Invoices",
+                    "path": "/sales/Invoices"
+                },
+                {
+                    "name": "Payments",
+                    "path": "/sales/Payments"
+                },
+                {
+                    "name": "Pipelines",
+                    "path": "/sales/Pipelines"
+                }
+            ]
+        },
+        {
+            "name": "Tasks",
+            "licon": "/assets/Sidebar/task.svg",
+            "list": [
+                {
+                    "name": "Dashboard",
+                    "path": "/tasks/Dashboard"
+                },
+                {
+                    "name": "Team Tasks",
+                    "path": "/tasks/TeamTasks"
+                }
+            ]
+        },
+        {
+            "name": "Jobs",
+            "licon": "/assets/Sidebar/job.svg",
+            "list": [
+                {
+                    "name": "Browse",
+                    "path": "/jobs/Browse"
+                },
+                {
+                    "name": "Employee",
+                    "path": "/jobs/Employee"
+                },
+                {
+                    "name": "Matching",
+                    "path": "/jobs/Matching"
+                },
+                {
+                    "name": "Proposal Template",
+                    "path": "/jobs/ProposalTemplate"
+                }
+            ]
+        },
+        {
+            "name": "Employees",
+            "licon": "/assets/Sidebar/employee.svg",
+            "list": [
+                {
+                    "name": "Manage",
+                    "path": "/employees/Manage"
+                },
+                {
+                    "name": "Time & Activity",
+                    "path": "/employees/TimeAndActivity"
+                },
+                {
+                    "name": "Timesheets",
+                    "path": "/employees/Timesheets"
+                },
+                {
+                    "name": "Appointments",
+                    "path": "/employees/Appointments"
+                },
+                {
+                    "name": "Approval",
+                    "path": "/employees/Approval"
+                },
+                {
+                    "name": "Employee Level",
+                    "path": "/employees/EmployeeLevel"
+                },
+                {
+                    "name": "Position",
+                    "path": "/employees/Position"
+                },
+                {
+                    "name": "Time off",
+                    "path": "/employees/Timeoff"
+                },
+                {
+                    "name": "Recurring Expenses",
+                    "path": "/employees/RecurringExpenses"
+                },
+                {
+                    "name": "Candidate",
+                    "path": "/employees/Candidate"
+                }
+
+            ]
+        },
+        {
+            "name": "Organizations",
+            "licon": "/assets/Sidebar/organization.svg",
+            "list": [
+                {
+                    "name": "Manage",
+                    "path": "/organizations/Manage"
+                },
+                {
+                    "name": "Equipment",
+                    "path": "/organizations/Equipment"
+                },
+                {
+                    "name": "Inventory",
+                    "path": "/organizations/Inventory"
+                },
+                {
+                    "name": "Tags",
+                    "path": "/organizations/Tags"
+                },
+                {
+                    "name": "Vendors",
+                    "path": "/organizations/Vendors"
+                },
+                {
+                    "name": "Projects",
+                    "path": "/organizations/Projects"
+                },
+                {
+                    "name": "Departments",
+                    "path": "/organizations/Departments"
+                },
+                {
+                    "name": "Teams",
+                    "path": "/organizations/Teams"
+                },
+                {
+                    "name": "Documents",
+                    "path": "/organizations/Documents"
+                },
+                {
+                    "name": "Employment Types",
+                    "path": "/organizations/EmploymentTypes"
+                },
+                {
+                    "name": "Recurring Expenses",
+                    "path": "/organizations/RecurringExpenses"
+                },
+                {
+                    "name": "Help Center",
+                    "path": "/organizations/HelpCenter"
+                }
+            ]
+        },
+        {
+            "name": "Contacts",
+            "licon": "/assets/Sidebar/contact.svg",
+            "list": [
+                {
+                    "name": "Visitors",
+                    "path": "/contacts/Visitors"
+                },
+                {
+                    "name": "Leads",
+                    "path": "/contacts/Leads"
+                },
+                {
+                    "name": "Consumers",
+                    "path": "/contacts/Consumers"
+                },
+                {
+                    "name": "Clients",
+                    "path": "/contacts/Clients"
+                }
+            ]
+        },
+        {
+            "name": "Goals",
+            "licon": "/assets/Sidebar/goal.svg",
+            "list": [
+                {
+                    "name": "Manage",
+                    "path": "/goals/Manage"
+                },
+                {
+                    "name": "Setting",
+                    "path": "/goals/Setting"
+                }
+            ]
+        },
+        {
+            "name": "Reports",
+            "licon": "/assets/Sidebar/reports.svg",
+            "list": [
+                {
+                    "name": "All Reports",
+                    "path": "/reports/AllReports"
+                },
+                {
+                    "name": "Time & Activity",
+                    "path": "/reports/Time&Activity"
+                }
+                ,
+                {
+                    "name": "Weekly",
+                    "path": "/reports/Weekly"
+                }
+                ,
+                {
+                    "name": "Apps & URLs",
+                    "path": "/reports/Apps&URLs"
+                },
+                {
+                    "name": "Manual Time Edits",
+                    "path": "/reports/ManualTimeEdits"
+                },
+                {
+                    "name": "Expense",
+                    "path": "/reports/Expense"
+                },
+                {
+                    "name": "Amounts Owed",
+                    "path": "/reports/AmountsOwed"
+                },
+                {
+                    "name": "Payments",
+                    "path": "/reports/Payments"
+                },
+                {
+                    "name": "Weekly Limits",
+                    "path": "/reports/WeeklyLimits"
+                },
+                {
+                    "name": "DailyLimits",
+                    "path": "/reports/DailyLimits"
+                },
+                {
+                    "name": "Project Budgets",
+                    "path": "/reports/ProjectBudgets"
+                },
+                {
+                    "name": "Client Budgets",
+                    "path": "/reports/ClientBudgets"
+                }
+
+            ]
+        }
+    ]
+}

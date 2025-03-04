@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+body {
+    font-family: Helvetica;
+}
+
+.form-control {
+    border-radius: 15px !important;
+    border: 1px solid #E2E8F0 !important;
+    background: #FFF !important;
+    height: 50px;
+    padding: 0px 20px;
+}
+
+.form-control:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.form-control::placeholder {
+   color:#A0AEC0;
+}
+.form-error{
+    border-radius: 15px !important;
+    border: 1px solid #ff0000 !important;
+    background: #FFF !important;
+    height: 50px;
+    padding: 0px 20px;
+}
+.form-error:focus {
+    border: none !important;
+    outline: none !important;
+}
+.form-error::placeholder {
+    color:#A0AEC0;
+ }
+
+ .popup-container{
+    position: fixed;
+    top:0%;
+    left:0%;
+    background-color:rgba(0, 0, 0, 0.352);
+    width:100%;
+    height:100vh;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .popupBody{
+    /* min-height:50%; */
+    height: auto;
+    max-width:400px;
+    margin: auto;
+    background-color: #fff;
+ }
