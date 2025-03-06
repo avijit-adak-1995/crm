@@ -211,3 +211,30 @@ export const salesApi = createApi({
     })
 
 })
+
+export const {
+    useCreateSalesInvoiceMutation,
+    useGetAllSalesInvoicesMutation,
+    useUpdateSalesInvoiceMutation,
+    useDeleteSalesInvoiceMutation,
+    useGetSalesInvoiceByIdMutation,
+    
+    useCreateSalesPaymentMutation,
+    useGetAllSalesPaymentsMutation,
+    useGetSalesPaymentByIdMutation,
+    useUpdateSalesPaymentMutation,
+    useDeleteSalesPaymentMutation,
+
+    useCreatePipelineMutation,
+    useGetAllPipelinesMutation,
+    useGetPipelineByIdMutation,
+    useUpdatePipelineMutation,
+    useDeletePipelineMutation,
+
+    useCreateProposalMutation,
+    useGetAllProposalsMutation,
+    useGetProposalByIdMutation,
+    useUpdateProposalMutation,
+    useDeleteProposalMutation,
+
+} = salesApi

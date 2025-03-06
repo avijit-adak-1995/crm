@@ -90,4 +90,7 @@ export const tasksApi = createApi({
 
 export const {
     useGetAllTeamTasksMutation,
+    useAddTeamTaskMutation,
+    useUpdateTeamTaskMutation,
+    useDeleteTeamTaskMutation
 } = tasksApi

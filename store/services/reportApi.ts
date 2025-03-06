@@ -369,3 +369,60 @@ export const reportApi = createApi({
     })
 
 })
+
+export const {
+    useCreateClientBudgetMutation,
+    useGetAllClientBudgetMutation,
+    useUpdateClientBudgetMutation,
+    useDeleteClientBudgetMutation,
+    useGetClientBudgetByIdMutation,
+
+    useCreateDailyLimitsMutation,
+    useGetAllDailyLimitsMutation,
+    useGetDailyLimitsByIdMutation,
+    useUpdateDailyLimitsMutation,
+    useDeleteDailyLimitsMutation,
+
+    useCreateExpenseReportMutation,
+    useGetAllExpenseReportsMutation,
+    useGetExpenseReportByIdMutation,
+    useUpdateExpenseReportMutation,
+    useDeleteExpenseReportMutation,
+
+    useCreateManualTimeEditReportMutation,
+    useGetAllManualTimeEditReportsMutation,
+    useGetManualTimeEditReportByIdMutation,
+    useUpdateManualTimeEditReportMutation,
+    useDeleteManualTimeEditReportMutation,
+
+    useCreatePaymentReportMutation,
+    useGetAllPaymentReportsMutation,
+    useGetPaymentReportByIdMutation,
+    useUpdatePaymentReportMutation,
+    useDeletePaymentReportMutation,
+
+    useCreateProjectBudgetMutation,
+    useGetAllProjectBudgetsMutation,
+    useGetProjectBudgetByIdMutation,
+    useUpdateProjectBudgetMutation,
+    useDeleteProjectBudgetMutation,
+
+    useCreateTimeActivityReportMutation,
+    useGetAllTimeActivityReportsMutation,
+    useGetTimeActivityReportByIdMutation,
+    useUpdateTimeActivityReportMutation,
+    useDeleteTimeActivityReportMutation,
+
+    useCreateWeeklyEntryMutation,
+    useGetAllWeeklyEntriesMutation,
+    useGetWeeklyEntryByIdMutation,
+    useUpdateWeeklyEntryMutation,
+    useDeleteWeeklyEntryMutation,
+
+    useCreateWeeklyLimitsMutation,
+    useGetAllWeeklyLimitsMutation,
+    useGetWeeklyLimitsByIdMutation,
+    useUpdateWeeklyLimitsMutation,
+    useDeleteWeeklyLimitsMutation,
+
+} = reportApi
