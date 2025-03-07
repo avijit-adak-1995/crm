@@ -405,6 +405,23 @@ export const EmployeesApi = createApi({
                 body:data
             })
         }),
+
+        updateHiringStatus: builder.mutation<{}, any>({
+            query: ({id,data}) => ({
+                url: `/candidate/${id}/hiring-status`,
+                method: "PUT",
+                body: data
+            })
+        }),
+
+        addCandidateInvitations: builder.mutation<{}, any>({
+            query: (data) => ({
+                url: "candidate-invitations",
+                method: "POST",
+                body: data
+            })
+        }),
+
     })
 
 })
@@ -482,6 +499,9 @@ export const {
     useUpdateAppointmentMutation,
     useUpdateTimeActivityMutation,
     useUpdateTimeOffRequestMutation,
-    useUpdateTimesheetMutation
+    useUpdateTimesheetMutation,
+    useUpdateHiringStatusMutation,
+    useAddCandidateInvitationsMutation
+
 
 }=EmployeesApi
