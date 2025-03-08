@@ -1,10 +1,15 @@
 import NavTool from '@/components/commonElement/NavTool'
 import Table from '@/components/commonElement/Table'
 import TableActionPopUp from '@/components/commonElement/TableActionPopUp';
+import { useSeeAllEmployeeManageQuery } from '@/store/services/EmployeesApi';
 import React, { useState } from 'react'
 
 const Employee = () => {
   const [showActions, setShowActions] = useState(-1);
+
+  const { data: getEmplyee }: any = useSeeAllEmployeeManageQuery("");
+    const getEmplyeeData = getEmplyee?.data;
+    console.log({ getEmplyeeData });
 
   const placeHolder = [
     "Name",
@@ -109,18 +114,18 @@ const Employee = () => {
                     </td>
                   ))}
                 </tr>
-                {data?.map((item: any, i: number) => (
+                {getEmplyeeData?.map((item: any, i: number) => (
                   <tr key={i} >
                     <td>
                       <img
-                        src={item?.img}
+                        src={item?.img || `https://i.pinimg.com/1200x/83/66/6a/83666acd8bf0d501a652087d0391667a.jpg`}
                         alt={item?.name}
                       />
-                      <div>{item?.name}</div>
+                      <div>{item?.fullName}</div>
                     </td>
                     <td>{item?.phoneNumber}</td>
                     <td style={{color:'#2684FF'}}>{item?.email}</td>
-                    <td style={{fontSize:'12px'}}>{item?.location}</td>
+                    <td style={{fontSize:'12px'}}>{item?.location || 'N/A'}</td>
                     <td>
                       <button style={{backgroundColor:`${item?.status==='Inactive'?'#FFAB2D':''}`}}>{item?.status}</button>
                     </td>
