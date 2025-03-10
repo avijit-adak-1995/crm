@@ -178,10 +178,10 @@ export const EmployeesApi = createApi({
             })
         }),
 
-        employeeManageDetails: builder.query<{}, any>({
+        employeeManageDetails: builder.mutation<{}, any>({
             query: (id) => ({
                 url: `employeeManage/details/${id}`,
-                method: "POST"
+                method: "GET"
             })
         }),
 
@@ -458,7 +458,7 @@ export const {
     useEditManageLevelMutation,
     useEditPositionMutation,
     useEditRecurringExpenseMutation,
-    useEmployeeManageDetailsQuery,
+    useEmployeeManageDetailsMutation,
     useGetAllAppointmentsQuery,
     useGetAllTimeActivitiesQuery,
     useGetAllTimeOffRequestsQuery,
@@ -469,7 +469,7 @@ export const {
     useGetTimesheetByIdQuery,
     useLazyApprovalDetailsQuery,
     useLazyCandidateDetailsQuery,
-    useLazyEmployeeManageDetailsQuery,
+    // useLazyEmployeeManageDetailsMutation,
     useLazyGetAllAppointmentsQuery,
     useLazyGetAllTimeActivitiesQuery,
     useLazyGetAllTimeOffRequestsQuery,
