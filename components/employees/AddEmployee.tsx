@@ -159,6 +159,7 @@ const AddEmployee = ({ setOpenAdd, openAdd, getEmployeeId }: any) => {
         >
           Save
         </button>
+        <button className={styles.cancelButton} onClick={() => setOpenAdd(!openAdd)} >Cancel</button>
       </div>
     </form>
 

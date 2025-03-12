@@ -1,36 +1,62 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "../../styles/organization/Equipment.module.css";
+import { useDeleteEquipmentMutation, useGetAllEquipmentQuery } from "@/store/services/organizationsApi";
+import AddEquipment from "@/components/organisation/AddEquipment";
+import TableActionPopUp from "@/components/commonElement/TableActionPopUp";
+import Swal from 'sweetalert2';
 
-interface Employee {
+
+interface Equipment {
   id: string;
   image: string;
   name: string;
   type: string;
   cost: string;
   status: string;
+  _id: string;
 }
 
 
 const Equipment = () => {
-  const [employees, setEmployees] = useState<Employee[]>([]);
   const [selectedDate, setSelectedDate] = useState<string>("");
+  const [openAdd, setOpenAdd] = useState<boolean>(false);
+  const [showActions, setShowActions] = useState(-1);
+  const [getEquipmentId, setEqipmentId] = useState<any>();
+  const [equipmentDelete] = useDeleteEquipmentMutation();
+  const { data: getEquipment }: any = useGetAllEquipmentQuery("");
 
-  useEffect(() => {
-    // Generate 50 random dummy records
-    const dummyData: Employee[] = Array.from({ length: 2 }, (_, index) => ({
-      id: index.toString(),
-      image: "https://dummyimage.com/640x360/fff/aaa",
-      name: `Mount ${index + 1}`,
-      type: `car`,
-      cost: `INR ${Math.floor(Math.random() * 10000) + 5000}`,
-      status: true ? "In Progress" : "Inactive",
-    }));
+  
+  const selectedEquipmentForEdit = async (equipment: Equipment) => {
+    setEqipmentId(equipment?._id)
+    setOpenAdd(true)
+  };
 
-    setEmployees(dummyData);
-  }, []);
+  const handleDelete = async (equipment: Equipment) => {
+    const result = await Swal.fire({
+      title: 'Are you sure?',
+      text: 'You won\'t be able to revert this!',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#d33',
+      cancelButtonColor: '#3085d6',
+      confirmButtonText: 'Yes, delete it!',
+    });
+  
+    if (result.isConfirmed) {
+        // Your delete logic here, e.g., an API call
+        let deleteEmp:any= await equipmentDelete(equipment?._id);
+        console.log('deleteEmp', deleteEmp?.data)
+        Swal.fire(
+          'Deleted!',
+          'The user has been deleted.',
+          'success'
+        );
+    }
+  };
 
   const Table = () => {
-    const [employeesData, setEmployeesData] = useState<Employee[]>(employees);
+
+    console.log("getEquipment", getEquipment)
 
     return (
       <div className={styles.tableWrapper}>
@@ -47,23 +73,44 @@ const Equipment = () => {
               </tr>
             </thead>
             <tbody>
-              {employeesData.map((employee: Employee) => (
-                <tr key={employee.id}>
-                  <td><img src={employee.image} alt="Image" className={styles.tableImage}/></td>
-                  <td>{employee.name}</td>
-                  <td>{employee.type}</td>
-                  <td>{employee.cost}</td>
+              {getEquipment?.data?.map((equipment: Equipment, i: number) => (
+                <tr key={equipment.id}>
+                  <td><img src={equipment.image || 'https://dummyimage.com/640x360/fff/aaa'} alt="Image" className={styles.tableImage}/></td>
+                  <td>{equipment.name}</td>
+                  <td>{equipment.type}</td>
+                  <td>{equipment.cost}</td>
                   <td>
                     <div
                       className={`${styles.statusButton} ${
-                        employee.status === "In Progress"
+                        equipment.status === "In Progress"
                           ? styles.active
                           : styles.inactive
                       }`}
                     >
-                      {employee.status}
+                      {equipment.status}
                     </div>
                   </td>
+                  <td style={{ textAlign: "center" }}>
+                <img
+                  onClick={() => setShowActions(i)}
+                  src="/assets/3dotV.svg"
+                  style={{ cursor: "pointer" }}
+                  alt={equipment?.name}
+                />
+                <TableActionPopUp
+                  show={showActions === i}
+                  setShow={setShowActions}
+                >
+                  <div style={{ cursor: "pointer" }} className="p-1" onClick={() => selectedEquipmentForEdit(equipment)}>
+                    <img title="edit" src="/assets/editIcon.svg" alt=""  />
+                    Edit
+                  </div>
+                  <div style={{ cursor: "pointer" }} className="p-1" onClick={()=> handleDelete(equipment)}>
+                    <img title="remove" src="/assets/deleteIcon.svg" alt=""  />
+                    delete
+                  </div>
+                </TableActionPopUp>
+              </td>
                 </tr>
               ))}
             </tbody>
@@ -79,7 +126,9 @@ const Equipment = () => {
       <div className={styles.sectioncontainer}>
         <div className={styles.sectionwrapper}>
           <div className={styles.section}>
-            <button className={styles.addButton}>Add</button>
+            <button className={styles.addButton} onClick={() => {
+                  setOpenAdd(!openAdd);
+                }}>Add</button>
             <input
               type="date"
               className={styles.datePicker}
@@ -109,6 +158,7 @@ const Equipment = () => {
       </div>
 
       <Table />
+      {openAdd && <AddEquipment setOpenAdd={setOpenAdd} openAdd={openAdd} getEquipmentId={getEquipmentId}/>}
     </div>
   );
 };

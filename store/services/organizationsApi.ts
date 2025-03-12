@@ -86,37 +86,39 @@ export const organizationsApi = createApi({
         }),
 
         // equipment record start
-
         addEquipment: builder.mutation<{}, any>({
-            query: () => ({
-                url: "",
-                method: ""
+            query: (data) => ({
+                url: "equipment/add",
+                method: 'POST',
+                body: data
             })
         }),
 
-        getAllEquipment: builder.mutation<{}, any>({
+        getAllEquipment: builder.query<{}, any>({
             query: () => ({
-                url: "",
-                method: ""
+                url: "equipment",
+                method: "GET",
             })
         }),
+
         getEquipmentById: builder.mutation<{}, any>({
-            query: () => ({
-                url: "",
-                method: ""
+            query: (id) => ({
+                url: `equipment/details/${id}`,
+                method: "GET"
+            })
+        }),
+        updateEquipment: builder.mutation<{}, any>({
+            query: ({ id, data }) => ({
+                url: `equipment/update/${id}`,
+                method: "PUT",
+                body: data
             })
         }),
 
-        updateEquipment: builder.mutation<{}, any>({
-            query: () => ({
-                url: "",
-                method: ""
-            })
-        }),
         deleteEquipment: builder.mutation<{}, any>({
-            query: () => ({
-                url: "",
-                method: ""
+            query: (id) => ({
+                url: `equipment/delete/${id}`,
+                method: "DELETE"
             })
         }),
 
@@ -395,5 +397,11 @@ export const {
     useAddDepartmentMutation,
     useAddTeamMutation,
     useGetAllDepartmentsQuery,
-    useGetAllTeamsQuery
+    useGetAllTeamsQuery,
+    useGetAllEquipmentQuery,
+    useAddEquipmentMutation,
+    useGetEquipmentByIdMutation,
+    useUpdateEquipmentMutation,
+    useDeleteEquipmentMutation
+
 }=organizationsApi;
